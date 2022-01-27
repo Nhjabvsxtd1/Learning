@@ -1,0 +1,8 @@
+def who_is_this_house_to_starks(family):
+    if family == 'Karstark' or family == 'Tully':
+        statys = 'friend'
+    elif family == 'Lannister' or family ==  'Frey':
+        statys = 'enemy'
+    else:
+        statys = 'neutral'
+    return statys
