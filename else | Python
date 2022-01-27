@@ -1,0 +1,12 @@
+def normalize_url(address):
+    first = (address [:8])
+    conformity = ("https://" in first)
+    if conformity is True:
+        return address
+    else:
+        wrong = ("http://" in address[:7]) 
+        if wrong is True:
+
+            return ("https://" + address[7:])
+        else:
+            return ("https://" + address)
